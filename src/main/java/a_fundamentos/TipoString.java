@@ -15,10 +15,10 @@ public class TipoString {
 
         var nome = "pedro";
         var sobrenome = "santos";
-        var idade = "33";
-        var salario = "1250.998";
+        var idade = 33;
+        var salario = 1250.998;
 
-        String frase = String.format("/nO senhor %s %s tem %d anos e recebe R$%.2f.",nome
+        String frase = String.format("\nO senhor %s %s tem %d anos e recebe R$%.2f.",nome
                 , sobrenome,idade ,salario );
         System.out.println(frase);
 
