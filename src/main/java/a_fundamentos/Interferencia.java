@@ -1,6 +1,6 @@
 package a_fundamentos;
 
-public class Inrterferencia {
+public class Interferencia {
     public static void main(String[] args) {
         double b= 5.6;
         var a = 5.6;
