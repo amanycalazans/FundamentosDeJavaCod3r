@@ -8,20 +8,36 @@ public class DesafioWhile {
         Scanner entrada = new Scanner (System.in);
 
         int quantidadeDeNotas = 0;
+
         double nota = 0;
+
         double total = 0;
 
-        while(nota != -1){
-            System.out.print("Informe a nota (ou -1 p/ sair) ");
+        while(nota != - 1) {//Enquanto a nota for diferente de -1
+
+            System.out.print("Informe a nota (ou 1 p/ sair): ");
+
             nota = entrada.nextDouble();
+
+            if (nota <= 10 && nota >=0){
+
+                total += nota; //total <- total + nota
+
+                quantidadeDeNotas++;
+
+            }else if (nota != -1) {
+
+                System.out.println("nota inválida!!! ;D");
+
+            }
+
         }
-        if(nota <= 10 && nota >=0){
-            total += nota;
-            quantidadeDeNotas ++;
-        }else
-            System.out.println("Nota inválida");
-        //calcular a média
+
+
+//Calcular a média
+
         double media = total / quantidadeDeNotas;
+
         System.out.println("Média = " + media);
 
         entrada.close();
