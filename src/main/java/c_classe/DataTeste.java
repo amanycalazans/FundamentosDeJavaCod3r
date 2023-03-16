@@ -13,7 +13,10 @@ public class DataTeste {
         d2.mes = 6;
         d2.ano = 2025;
 
-        System.out.printf("%d/%d/%d",d1.dia,d1.mes,d1.ano);
-        System.out.printf("\n%d/%d/%d",d2.dia,d2.mes,d2.ano);
+        String dataDeHoje1 = d1.obterDataFormatada();
+        String dataDeHoje2 = d2.obterDataFormatada();
+
+        System.out.println(dataDeHoje1);
+        System.out.println(dataDeHoje2);
     }
 }
